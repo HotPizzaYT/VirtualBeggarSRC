@@ -1,0 +1,821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DB1A1BD-F204-4382-8E63-013CB846923C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\IL2CPP\DummyDll\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppDummyDll">
+      <HintPath>..\..\IL2CPP\DummyDll\Il2CppDummyDll.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>..\..\IL2CPP\DummyDll\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>..\..\IL2CPP\DummyDll\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Security">
+      <HintPath>..\..\IL2CPP\DummyDll\Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Stores">
+      <HintPath>..\..\IL2CPP\DummyDll\Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\IL2CPP\DummyDll\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\IL2CPP\DummyDll\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>..\..\IL2CPP\DummyDll\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>..\..\IL2CPP\DummyDll\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\IL2CPP\DummyDll\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\IL2CPP\DummyDll\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\IL2CPP\DummyDll\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>..\..\IL2CPP\DummyDll\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\IL2CPP\DummyDll\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\IL2CPP\DummyDll\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\IL2CPP\DummyDll\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>..\..\IL2CPP\DummyDll\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\IL2CPP\DummyDll\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\IL2CPP\DummyDll\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\IL2CPP\DummyDll\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\IL2CPP\DummyDll\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>..\..\IL2CPP\DummyDll\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="WordFilter">
+      <HintPath>..\..\IL2CPP\DummyDll\WordFilter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="AaltoLiikeC.cs" />
+    <Compile Include="AdMobMainokset.cs" />
+    <Compile Include="AuthenticationValues.cs" />
+    <Compile Include="AutoRotate.cs" />
+    <Compile Include="ByteTesti.cs" />
+    <Compile Include="CBMainokset.cs" />
+    <Compile Include="CloudDataSiirtaja.cs" />
+    <Compile Include="CloudRegionCode.cs" />
+    <Compile Include="CloudRegionFlag.cs" />
+    <Compile Include="CloudSaveAndroid.cs" />
+    <Compile Include="CloudSaveIOS.cs" />
+    <Compile Include="CloudScene.cs" />
+    <Compile Include="CloudUIHandler.cs" />
+    <Compile Include="Com\Google\Android\Gms\Common\Api\GoogleApiClient.cs" />
+    <Compile Include="Com\Google\Android\Gms\Common\Api\PendingResult.cs" />
+    <Compile Include="Com\Google\Android\Gms\Common\Api\Result.cs" />
+    <Compile Include="Com\Google\Android\Gms\Common\Api\ResultCallback.cs" />
+    <Compile Include="Com\Google\Android\Gms\Common\Api\ResultCallbackProxy.cs" />
+    <Compile Include="Com\Google\Android\Gms\Common\Api\Status.cs" />
+    <Compile Include="Com\Google\Android\Gms\Common\ConnectionResult.cs" />
+    <Compile Include="Com\Google\Android\Gms\Games\Games.cs" />
+    <Compile Include="Com\Google\Android\Gms\Games\Games_BaseGamesApiMethodImpl.cs" />
+    <Compile Include="Com\Google\Android\Gms\Games\Stats\PlayerStats.cs" />
+    <Compile Include="Com\Google\Android\Gms\Games\Stats\PlayerStatsObject.cs" />
+    <Compile Include="Com\Google\Android\Gms\Games\Stats\Stats.cs" />
+    <Compile Include="Com\Google\Android\Gms\Games\Stats\StatsObject.cs" />
+    <Compile Include="Com\Google\Android\Gms\Games\Stats\Stats_LoadPlayerStatsResult.cs" />
+    <Compile Include="Com\Google\Android\Gms\Games\Stats\Stats_LoadPlayerStatsResultObject.cs" />
+    <Compile Include="ConnectAndJoinRandom.cs" />
+    <Compile Include="ConnectionState.cs" />
+    <Compile Include="CustomAuthenticationType.cs" />
+    <Compile Include="CustomTypes.cs" />
+    <Compile Include="DataKasaaja.cs" />
+    <Compile Include="DataMaster.cs" />
+    <Compile Include="DisconnectCause.cs" />
+    <Compile Include="DropdownPanel.cs" />
+    <Compile Include="EasyMobile\Achievement.cs" />
+    <Compile Include="EasyMobile\AdChildDirectedTreatment.cs" />
+    <Compile Include="EasyMobile\AdClientImpl.cs" />
+    <Compile Include="EasyMobile\AdColonyClientImpl.cs" />
+    <Compile Include="EasyMobile\AdColonySettings.cs" />
+    <Compile Include="EasyMobile\AdId.cs" />
+    <Compile Include="EasyMobile\AdLocation.cs" />
+    <Compile Include="EasyMobile\AdLocationExtension.cs" />
+    <Compile Include="EasyMobile\AdMobClientImpl.cs" />
+    <Compile Include="EasyMobile\AdMobSettings.cs" />
+    <Compile Include="EasyMobile\AdNetwork.cs" />
+    <Compile Include="EasyMobile\AdOrientation.cs" />
+    <Compile Include="EasyMobile\AdPlacement.cs" />
+    <Compile Include="EasyMobile\AdSettings.cs" />
+    <Compile Include="EasyMobile\AdType.cs" />
+    <Compile Include="EasyMobile\Advertising.cs" />
+    <Compile Include="EasyMobile\AdvertisingConsentManager.cs" />
+    <Compile Include="EasyMobile\AndroidPermission.cs" />
+    <Compile Include="EasyMobile\Android\EMAndroidJavaObject.cs" />
+    <Compile Include="EasyMobile\AnimatedClip.cs" />
+    <Compile Include="EasyMobile\AppLifecycleManager.cs" />
+    <Compile Include="EasyMobile\AppLovinClientImpl.cs" />
+    <Compile Include="EasyMobile\AppLovinSettings.cs" />
+    <Compile Include="EasyMobile\AudienceNetworkClientImpl.cs" />
+    <Compile Include="EasyMobile\AudienceNetworkSettings.cs" />
+    <Compile Include="EasyMobile\AutoAdLoadingMode.cs" />
+    <Compile Include="EasyMobile\BannerAdNetwork.cs" />
+    <Compile Include="EasyMobile\BannerAdPosition.cs" />
+    <Compile Include="EasyMobile\BannerAdSize.cs" />
+    <Compile Include="EasyMobile\CameraType.cs" />
+    <Compile Include="EasyMobile\ChartboostClientImpl.cs" />
+    <Compile Include="EasyMobile\ChartboostSettings.cs" />
+    <Compile Include="EasyMobile\ClipPlayer.cs" />
+    <Compile Include="EasyMobile\ClipPlayerScaleMode.cs" />
+    <Compile Include="EasyMobile\ClipPlayerUI.cs" />
+    <Compile Include="EasyMobile\ConsentDialog.cs" />
+    <Compile Include="EasyMobile\ConsentDialogComposerSettings.cs" />
+    <Compile Include="EasyMobile\ConsentManager.cs" />
+    <Compile Include="EasyMobile\ConsentStatus.cs" />
+    <Compile Include="EasyMobile\ConsentStorage.cs" />
+    <Compile Include="EasyMobile\Contact.cs" />
+    <Compile Include="EasyMobile\ContactsApiSettings.cs" />
+    <Compile Include="EasyMobile\CrossPlatformId.cs" />
+    <Compile Include="EasyMobile\Demo\AddedStringStringView.cs" />
+    <Compile Include="EasyMobile\Demo\AdsSection.cs" />
+    <Compile Include="EasyMobile\Demo\AdvertisingDemo.cs" />
+    <Compile Include="EasyMobile\Demo\AlertPopup.cs" />
+    <Compile Include="EasyMobile\Demo\BannerSection.cs" />
+    <Compile Include="EasyMobile\Demo\ColorChooser.cs" />
+    <Compile Include="EasyMobile\Demo\ColorHandler.cs" />
+    <Compile Include="EasyMobile\Demo\ContactDemo.cs" />
+    <Compile Include="EasyMobile\Demo\ContactView.cs" />
+    <Compile Include="EasyMobile\Demo\DemoAppConsent.cs" />
+    <Compile Include="EasyMobile\Demo\DemoHomeController.cs" />
+    <Compile Include="EasyMobile\Demo\DemoUtils.cs" />
+    <Compile Include="EasyMobile\Demo\DigitalClock.cs" />
+    <Compile Include="EasyMobile\Demo\GameServicesDemo.cs" />
+    <Compile Include="EasyMobile\Demo\GameServicesDemo_Multiplayer_BaseControl.cs" />
+    <Compile Include="EasyMobile\Demo\GameServicesDemo_Multiplayer_RealtimeKitchenSink.cs" />
+    <Compile Include="EasyMobile\Demo\GameServicesDemo_Multiplayer_TurnbasedKitchenSink.cs" />
+    <Compile Include="EasyMobile\Demo\GameServicesDemo_SavedGames.cs" />
+    <Compile Include="EasyMobile\Demo\GifDemo.cs" />
+    <Compile Include="EasyMobile\Demo\InAppPurchasingDemo.cs" />
+    <Compile Include="EasyMobile\Demo\InterstitialSection.cs" />
+    <Compile Include="EasyMobile\Demo\LoadAndShowSection.cs" />
+    <Compile Include="EasyMobile\Demo\LoadingPanelController.cs" />
+    <Compile Include="EasyMobile\Demo\MediaDemo.cs" />
+    <Compile Include="EasyMobile\Demo\MediaResultView.cs" />
+    <Compile Include="EasyMobile\Demo\NativeUIDemo.cs" />
+    <Compile Include="EasyMobile\Demo\NotificationHandler.cs" />
+    <Compile Include="EasyMobile\Demo\NotificationsDemo.cs" />
+    <Compile Include="EasyMobile\Demo\PrivacyDemo.cs" />
+    <Compile Include="EasyMobile\Demo\Racing3DCameraControl.cs" />
+    <Compile Include="EasyMobile\Demo\Racing3DCarControl.cs" />
+    <Compile Include="EasyMobile\Demo\Racing3DCarInputHandler.cs" />
+    <Compile Include="EasyMobile\Demo\Racing3DGameControl.cs" />
+    <Compile Include="EasyMobile\Demo\Racing3DGameModel.cs" />
+    <Compile Include="EasyMobile\Demo\Racing3DGameView.cs" />
+    <Compile Include="EasyMobile\Demo\RewardedVideoSection.cs" />
+    <Compile Include="EasyMobile\Demo\ScrollableList.cs" />
+    <Compile Include="EasyMobile\Demo\ScrollableListItem.cs" />
+    <Compile Include="EasyMobile\Demo\SharingDemo.cs" />
+    <Compile Include="EasyMobile\Demo\SoundManager.cs" />
+    <Compile Include="EasyMobile\Demo\StringStringCollectionView.cs" />
+    <Compile Include="EasyMobile\Demo\TextureGenerator.cs" />
+    <Compile Include="EasyMobile\Demo\TicTacToeGameControl.cs" />
+    <Compile Include="EasyMobile\Demo\TicTacToeGameModel.cs" />
+    <Compile Include="EasyMobile\Demo\TicTacToeGameView.cs" />
+    <Compile Include="EasyMobile\Demo\TicTacToeModelExtension.cs" />
+    <Compile Include="EasyMobile\Demo\UtilitiesDemo.cs" />
+    <Compile Include="EasyMobile\DeviceContacts.cs" />
+    <Compile Include="EasyMobile\EEACountries.cs" />
+    <Compile Include="EasyMobile\EEACountriesExtension.cs" />
+    <Compile Include="EasyMobile\EEARegionStatus.cs" />
+    <Compile Include="EasyMobile\EEARegionStatusExtension.cs" />
+    <Compile Include="EasyMobile\EEARegionValidationMethods.cs" />
+    <Compile Include="EasyMobile\EEARegionValidator.cs" />
+    <Compile Include="EasyMobile\EM_IAPConstants.cs" />
+    <Compile Include="EasyMobile\EM_Settings.cs" />
+    <Compile Include="EasyMobile\FirebaseMessage.cs" />
+    <Compile Include="EasyMobile\FirebaseNotification.cs" />
+    <Compile Include="EasyMobile\GameServices.cs" />
+    <Compile Include="EasyMobile\GameServicesItem.cs" />
+    <Compile Include="EasyMobile\GameServicesSettings.cs" />
+    <Compile Include="EasyMobile\Gif.cs" />
+    <Compile Include="EasyMobile\GifExportTask.cs" />
+    <Compile Include="EasyMobile\Giphy.cs" />
+    <Compile Include="EasyMobile\GiphyUploadParams.cs" />
+    <Compile Include="EasyMobile\GlobalConsentManager.cs" />
+    <Compile Include="EasyMobile\GPGSSavedGameDataSource.cs" />
+    <Compile Include="EasyMobile\HeyzapClientImpl.cs" />
+    <Compile Include="EasyMobile\HeyzapSettings.cs" />
+    <Compile Include="EasyMobile\IAdClient.cs" />
+    <Compile Include="EasyMobile\IAndroidPermissionRequired.cs" />
+    <Compile Include="EasyMobile\IAPAndroidStore.cs" />
+    <Compile Include="EasyMobile\IAPProduct.cs" />
+    <Compile Include="EasyMobile\IAPProductType.cs" />
+    <Compile Include="EasyMobile\IAPSettings.cs" />
+    <Compile Include="EasyMobile\IAPStore.cs" />
+    <Compile Include="EasyMobile\IClipPlayer.cs" />
+    <Compile Include="EasyMobile\IConsentRequirable.cs" />
+    <Compile Include="EasyMobile\IDeviceCamera.cs" />
+    <Compile Include="EasyMobile\IDeviceGallery.cs" />
+    <Compile Include="EasyMobile\IIOSInfoItemRequired.cs" />
+    <Compile Include="EasyMobile\ImageFormat.cs" />
+    <Compile Include="EasyMobile\InAppPurchasing.cs" />
+    <Compile Include="EasyMobile\Internal\AndroidAppLifecycleHandler.cs" />
+    <Compile Include="EasyMobile\Internal\AndroidUtil.cs" />
+    <Compile Include="EasyMobile\Internal\ColorExt.cs" />
+    <Compile Include="EasyMobile\Internal\DateTimeExt.cs" />
+    <Compile Include="EasyMobile\Internal\Dictionary_AdPlacement_AdId.cs" />
+    <Compile Include="EasyMobile\Internal\EnumFlagsAttribute.cs" />
+    <Compile Include="EasyMobile\Internal\FileUtil.cs" />
+    <Compile Include="EasyMobile\Internal\GameServices\AndroidSavedGameClient.cs" />
+    <Compile Include="EasyMobile\Internal\GameServices\Android\GPGTypeConverter.cs" />
+    <Compile Include="EasyMobile\Internal\GameServices\EditorRealTimeMultiplayerClient.cs" />
+    <Compile Include="EasyMobile\Internal\GameServices\GPGRealTimeMultiplayerClient.cs" />
+    <Compile Include="EasyMobile\Internal\GameServices\GPGTurnBasedMultiplayerClient.cs" />
+    <Compile Include="EasyMobile\Internal\GameServices\UnsupportedRealTimeMultiplayerClient.cs" />
+    <Compile Include="EasyMobile\Internal\GameServices\UnsupportedSavedGameClient.cs" />
+    <Compile Include="EasyMobile\Internal\GameServices\UnsupportedTurnBasedMultiplayerClient.cs" />
+    <Compile Include="EasyMobile\Internal\Gif\Android\AndroidNativeGif.cs" />
+    <Compile Include="EasyMobile\Internal\Gif\DecodeCompleteCallback.cs" />
+    <Compile Include="EasyMobile\Internal\Gif\GifDecodeResources.cs" />
+    <Compile Include="EasyMobile\Internal\Gif\GifFrameMetadata.cs" />
+    <Compile Include="EasyMobile\Internal\Gif\GifMetadata.cs" />
+    <Compile Include="EasyMobile\Internal\IAppLifecycleHandler.cs" />
+    <Compile Include="EasyMobile\Internal\IInteropObject.cs" />
+    <Compile Include="EasyMobile\Internal\InteropObject.cs" />
+    <Compile Include="EasyMobile\Internal\InteropObjectFactory.cs" />
+    <Compile Include="EasyMobile\Internal\IronSourceAppStateHandler.cs" />
+    <Compile Include="EasyMobile\Internal\NativeAPIs\Android\AndroidNativeAlert.cs" />
+    <Compile Include="EasyMobile\Internal\NativeAPIs\Contacts\INativeContactsProvider.cs" />
+    <Compile Include="EasyMobile\Internal\NativeAPIs\Contacts\UnsupportedContactProvider.cs" />
+    <Compile Include="EasyMobile\Internal\NativeAPIs\Media\AndroidDeviceCamera.cs" />
+    <Compile Include="EasyMobile\Internal\NativeAPIs\Media\AndroidDeviceGallery.cs" />
+    <Compile Include="EasyMobile\Internal\NativeAPIs\Media\AndroidLoadImageProxy.cs" />
+    <Compile Include="EasyMobile\Internal\NativeAPIs\Media\AndroidMediaCollectedProxy.cs" />
+    <Compile Include="EasyMobile\Internal\NativeAPIs\Media\AndroidMediaResultBridge.cs" />
+    <Compile Include="EasyMobile\Internal\NativeAPIs\Media\AndroidPickFromGalleryProxy.cs" />
+    <Compile Include="EasyMobile\Internal\NativeAPIs\Media\AndroidSaveImageProxy.cs" />
+    <Compile Include="EasyMobile\Internal\NativeAPIs\Media\UnsupportedDeviceCamera.cs" />
+    <Compile Include="EasyMobile\Internal\NativeAPIs\Media\UnsupportedDeviceGallery.cs" />
+    <Compile Include="EasyMobile\Internal\Notifications\AndroidLocalNotificationClient.cs" />
+    <Compile Include="EasyMobile\Internal\Notifications\AndroidNotificationListener.cs" />
+    <Compile Include="EasyMobile\Internal\Notifications\Android\AndroidNotificationCategory.cs" />
+    <Compile Include="EasyMobile\Internal\Notifications\Android\AndroidNotificationCategoryGroup.cs" />
+    <Compile Include="EasyMobile\Internal\Notifications\Android\AndroidNotificationHelper.cs" />
+    <Compile Include="EasyMobile\Internal\Notifications\Android\AndroidNotificationNative.cs" />
+    <Compile Include="EasyMobile\Internal\Notifications\Android\AndroidNotificationRequest.cs" />
+    <Compile Include="EasyMobile\Internal\Notifications\Android\AndroidNotificationResponse.cs" />
+    <Compile Include="EasyMobile\Internal\Notifications\ILocalNotificationClient.cs" />
+    <Compile Include="EasyMobile\Internal\Notifications\INotificationListener.cs" />
+    <Compile Include="EasyMobile\Internal\Notifications\NativeNotificationHandler.cs" />
+    <Compile Include="EasyMobile\Internal\Notifications\UnsupportedLocalNotificationClient.cs" />
+    <Compile Include="EasyMobile\Internal\Notifications\UnsupportedNotificationListener.cs" />
+    <Compile Include="EasyMobile\Internal\PInvokeCallbackUtil.cs" />
+    <Compile Include="EasyMobile\Internal\PInvokeUtil.cs" />
+    <Compile Include="EasyMobile\Internal\Privacy\AndroidConsentDialog.cs" />
+    <Compile Include="EasyMobile\Internal\Privacy\AndroidEEARegionValidator.cs" />
+    <Compile Include="EasyMobile\Internal\Privacy\BaseNativeEEARegionValidator.cs" />
+    <Compile Include="EasyMobile\Internal\Privacy\ConsentDialogContentSerializer.cs" />
+    <Compile Include="EasyMobile\Internal\Privacy\EditorConsentDialogButtonUI.cs" />
+    <Compile Include="EasyMobile\Internal\Privacy\EditorConsentDialogClickableText.cs" />
+    <Compile Include="EasyMobile\Internal\Privacy\EditorConsentDialogToggleSwitch.cs" />
+    <Compile Include="EasyMobile\Internal\Privacy\EditorConsentDialogToggleUI.cs" />
+    <Compile Include="EasyMobile\Internal\Privacy\EditorConsentDialogUI.cs" />
+    <Compile Include="EasyMobile\Internal\Privacy\IPlatformConsentDialog.cs" />
+    <Compile Include="EasyMobile\Internal\Privacy\IPlatformEEARegionValidator.cs" />
+    <Compile Include="EasyMobile\Internal\Privacy\NativeConsentDialogListener.cs" />
+    <Compile Include="EasyMobile\Internal\Privacy\UnsupportedConsentDialog.cs" />
+    <Compile Include="EasyMobile\Internal\Privacy\UnsupportedEEARegionValidator.cs" />
+    <Compile Include="EasyMobile\Internal\ReflectionUtil.cs" />
+    <Compile Include="EasyMobile\Internal\RenameAttribute.cs" />
+    <Compile Include="EasyMobile\Internal\RuntimeHelper.cs" />
+    <Compile Include="EasyMobile\Internal\SerializableDictionary.2.cs" />
+    <Compile Include="EasyMobile\Internal\SerializableDictionary.3.cs" />
+    <Compile Include="EasyMobile\Internal\SerializableDictionary.cs" />
+    <Compile Include="EasyMobile\Internal\SerializableDictionaryBase.cs" />
+    <Compile Include="EasyMobile\Internal\SerializableKeyValuePair.cs" />
+    <Compile Include="EasyMobile\Internal\SerializableKeyValuePairExtension.cs" />
+    <Compile Include="EasyMobile\Internal\Sharing\AndroidSharingClient.cs" />
+    <Compile Include="EasyMobile\Internal\Sharing\ISharingClient.cs" />
+    <Compile Include="EasyMobile\Internal\Sharing\UnsupportedSharingClient.cs" />
+    <Compile Include="EasyMobile\Internal\StorageUtil.cs" />
+    <Compile Include="EasyMobile\Internal\StoreReview\Android\AndroidNativeUtility.cs" />
+    <Compile Include="EasyMobile\Internal\StringAdIdSerializableDictionary.cs" />
+    <Compile Include="EasyMobile\Internal\StringStringKeyValuePair.cs" />
+    <Compile Include="EasyMobile\Internal\StringStringSerializableDictionary.cs" />
+    <Compile Include="EasyMobile\Internal\StrongToWeakDictionary.cs" />
+    <Compile Include="EasyMobile\Internal\TextureUtilities.cs" />
+    <Compile Include="EasyMobile\Internal\Util.cs" />
+    <Compile Include="EasyMobile\InterstitialAdNetwork.cs" />
+    <Compile Include="EasyMobile\Invitation.cs" />
+    <Compile Include="EasyMobile\iOSInfoPlistItem.cs" />
+    <Compile Include="EasyMobile\IRealTimeMultiplayerClient.cs" />
+    <Compile Include="EasyMobile\IRealTimeMultiplayerListener.cs" />
+    <Compile Include="EasyMobile\IronSourceClientImpl.cs" />
+    <Compile Include="EasyMobile\IronSourceSettings.cs" />
+    <Compile Include="EasyMobile\ISavedGameClient.cs" />
+    <Compile Include="EasyMobile\ITurnBasedMultiplayerClient.cs" />
+    <Compile Include="EasyMobile\Leaderboard.cs" />
+    <Compile Include="EasyMobile\LocalNotification.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\ActionElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\ActivityAliasElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\ActivityElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\AndroidManifestElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\AndroidManifestElementStyleExtension.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\AndroidManifestElementStyles.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\ApplicationElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\CategoryElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\DataElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\GrantUriPermissionElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\InstrumentationElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\IntentFilterElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\ManifestElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\MetaDataElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\PathPermissionElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\PermissionElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\PermissionGroupElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\PermissionTreeElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\ProviderElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\ReceiverElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\ServiceElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\SupportsGlTextureElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\SupportsScreensElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\UsesConfigurationElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\UsesFeatureElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\UsesLibraryElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\UsesPermissionElement.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\UsesPermissionSdk23Element.cs" />
+    <Compile Include="EasyMobile\ManifestGenerator\Elements\UsesSdkElement.cs" />
+    <Compile Include="EasyMobile\MatchDelegate.cs" />
+    <Compile Include="EasyMobile\MatchOutcome.cs" />
+    <Compile Include="EasyMobile\MatchRequest.cs" />
+    <Compile Include="EasyMobile\MatchType.cs" />
+    <Compile Include="EasyMobile\Media.cs" />
+    <Compile Include="EasyMobile\MediaApiSettings.cs" />
+    <Compile Include="EasyMobile\MediaResult.cs" />
+    <Compile Include="EasyMobile\MediaType.cs" />
+    <Compile Include="EasyMobile\MiniJSON\Json.cs" />
+    <Compile Include="EasyMobile\Module.cs" />
+    <Compile Include="EasyMobile\MoPubClientImpl.cs" />
+    <Compile Include="EasyMobile\MoPubSettings.cs" />
+    <Compile Include="EasyMobile\MoPubSettingsExtension.cs" />
+    <Compile Include="EasyMobile\NativeApisSettings.cs" />
+    <Compile Include="EasyMobile\NativeUI.cs" />
+    <Compile Include="EasyMobile\NoOpClientImpl.cs" />
+    <Compile Include="EasyMobile\Notification.cs" />
+    <Compile Include="EasyMobile\NotificationAuthOptions.cs" />
+    <Compile Include="EasyMobile\NotificationCategory.cs" />
+    <Compile Include="EasyMobile\NotificationCategoryGroup.cs" />
+    <Compile Include="EasyMobile\NotificationContent.cs" />
+    <Compile Include="EasyMobile\NotificationRepeat.cs" />
+    <Compile Include="EasyMobile\NotificationRepeatExtension.cs" />
+    <Compile Include="EasyMobile\NotificationRequest.cs" />
+    <Compile Include="EasyMobile\Notifications.cs" />
+    <Compile Include="EasyMobile\NotificationsConsentManager.cs" />
+    <Compile Include="EasyMobile\NotificationsSettings.cs" />
+    <Compile Include="EasyMobile\OneSignalNotificationPayload.cs" />
+    <Compile Include="EasyMobile\Participant.cs" />
+    <Compile Include="EasyMobile\ParticipantResultExtension.cs" />
+    <Compile Include="EasyMobile\Player.cs" />
+    <Compile Include="EasyMobile\Privacy.cs" />
+    <Compile Include="EasyMobile\PrivacySettings.cs" />
+    <Compile Include="EasyMobile\PushNotificationProvider.cs" />
+    <Compile Include="EasyMobile\RatingDialogContent.cs" />
+    <Compile Include="EasyMobile\RatingRequestSettings.cs" />
+    <Compile Include="EasyMobile\Recorder.cs" />
+    <Compile Include="EasyMobile\RemoteNotification.cs" />
+    <Compile Include="EasyMobile\RewardedAdNetwork.cs" />
+    <Compile Include="EasyMobile\RuntimeManager.cs" />
+    <Compile Include="EasyMobile\SavedGame.cs" />
+    <Compile Include="EasyMobile\SavedGameConflictResolutionStrategy.cs" />
+    <Compile Include="EasyMobile\SavedGameConflictResolver.cs" />
+    <Compile Include="EasyMobile\SavedGameInfoUpdate.cs" />
+    <Compile Include="EasyMobile\Sharing.cs" />
+    <Compile Include="EasyMobile\SharingSettings.cs" />
+    <Compile Include="EasyMobile\StoreReview.cs" />
+    <Compile Include="EasyMobile\Submodule.cs" />
+    <Compile Include="EasyMobile\TapjoyClientImpl.cs" />
+    <Compile Include="EasyMobile\TapjoySettings.cs" />
+    <Compile Include="EasyMobile\TurnBasedMatch.cs" />
+    <Compile Include="EasyMobile\UnityAdsClientImpl.cs" />
+    <Compile Include="EasyMobile\UnityAdsSettings.cs" />
+    <Compile Include="EM_GPGSIds.cs" />
+    <Compile Include="EventTriggerOmaC.cs" />
+    <Compile Include="ExitGames\Client\DemoParticle\TimeKeeper.cs" />
+    <Compile Include="ExitGames\Client\GUI\GizmoType.cs" />
+    <Compile Include="ExitGames\Client\GUI\GizmoTypeDrawer.cs" />
+    <Compile Include="ExitGames\Client\Photon\ActorProperties.cs" />
+    <Compile Include="ExitGames\Client\Photon\ErrorCode.cs" />
+    <Compile Include="ExitGames\Client\Photon\EventCaching.cs" />
+    <Compile Include="ExitGames\Client\Photon\EventCode.cs" />
+    <Compile Include="ExitGames\Client\Photon\GameProperties.cs" />
+    <Compile Include="ExitGames\Client\Photon\LoadbalancingPeer.cs" />
+    <Compile Include="ExitGames\Client\Photon\OperationCode.cs" />
+    <Compile Include="ExitGames\Client\Photon\ParameterCode.cs" />
+    <Compile Include="ExitGames\Client\Photon\PropertyTypeFlag.cs" />
+    <Compile Include="ExitGames\Client\Photon\ReceiverGroup.cs" />
+    <Compile Include="Extensionit.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="ExtensionTesti.cs" />
+    <Compile Include="FBEventTest.cs" />
+    <Compile Include="FirebaseControl.cs" />
+    <Compile Include="FirebaseEvent.cs" />
+    <Compile Include="FirebaseTestit.cs" />
+    <Compile Include="FPSDisplay.cs" />
+    <Compile Include="FrameControl.cs" />
+    <Compile Include="FriendInfo.cs" />
+    <Compile Include="GameObjectExtensions.cs" />
+    <Compile Include="GCManagerIOS.cs" />
+    <Compile Include="GooglePlayGames\Android\AndroidTokenClient.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Achievement.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\CommonStatusCodes.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\CommonTypesUtil.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\DataSource.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\DummyClient.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Events\EventVisibility.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Events\IEvent.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Events\IEventsClient.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Gravity.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\InvitationReceivedDelegate.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\LeaderboardCollection.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\LeaderboardScoreData.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\LeaderboardStart.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\LeaderboardTimeSpan.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Multiplayer\Invitation.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Multiplayer\IRealTimeMultiplayerClient.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Multiplayer\ITurnBasedMultiplayerClient.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Multiplayer\MatchDelegate.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Multiplayer\MatchOutcome.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Multiplayer\Participant.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Multiplayer\Player.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Multiplayer\RealTimeMultiplayerListener.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Multiplayer\TurnBasedMatch.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\AdvertisingResult.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\ConnectionRequest.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\ConnectionResponse.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\DummyNearbyConnectionClient.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\EndpointDetails.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\IDiscoveryListener.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\IMessageListener.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\INearbyConnectionClient.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\InitializationStatus.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\NearbyConnectionConfiguration.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\PlayerStats.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\PlayGamesClientConfiguration.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\ResponseStatus.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\ConflictCallback.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\ConflictResolutionStrategy.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\IConflictResolver.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\ISavedGameClient.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\ISavedGameMetadata.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\SavedGameMetadataUpdate.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\SavedGameRequestStatus.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\SelectUIStatus.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\ScorePageToken.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\UIStatus.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\VideoCaptureMode.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\VideoCaptureOverlayState.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\VideoQualityLevel.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Video\CaptureOverlayStateListener.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Video\IVideoClient.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Video\VideoCapabilities.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Video\VideoCaptureState.cs" />
+    <Compile Include="GooglePlayGames\GameInfo.cs" />
+    <Compile Include="GooglePlayGames\Native\Android\AndroidClient.cs" />
+    <Compile Include="GooglePlayGames\Native\CallbackUtils.cs" />
+    <Compile Include="GooglePlayGames\Native\ConversionUtils.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\Achievement.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\AchievementManager.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\AndroidPlatformConfiguration.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\Builder.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\CaptureOverlayStateListenerHelper.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\CommonErrorStatus.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\EndpointDiscoveryListenerHelper.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\Event.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\EventManager.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\GameServices.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\InternalHooks.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\Leaderboard.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\LeaderboardManager.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\MessageListenerHelper.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\MultiplayerInvitation.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\MultiplayerParticipant.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\NearbyConnections.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\NearbyConnectionsBuilder.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\NearbyConnectionsStatus.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\NearbyConnectionTypes.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\ParticipantResults.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\Player.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\PlayerManager.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\PlayerStats.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\RealTimeEventListenerHelper.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\RealTimeMultiplayerManager.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\RealTimeRoom.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\RealTimeRoomConfig.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\RealTimeRoomConfigBuilder.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\Score.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\ScorePage.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\ScoreSummary.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\Sentinels.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\SnapshotManager.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\SnapshotMetadata.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\SnapshotMetadataChange.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\SnapshotMetadataChangeBuilder.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\StatsManager.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\Status.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\SymbolLocation.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\TurnBasedMatch.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\TurnBasedMatchConfig.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\TurnBasedMatchConfigBuilder.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\TurnBasedMultiplayerManager.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\Types.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\VideoCapabilities.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\VideoCaptureState.cs" />
+    <Compile Include="GooglePlayGames\Native\Cwrapper\VideoManager.cs" />
+    <Compile Include="GooglePlayGames\Native\IClientImpl.cs" />
+    <Compile Include="GooglePlayGames\Native\JavaUtils.cs" />
+    <Compile Include="GooglePlayGames\Native\NativeClient.cs" />
+    <Compile Include="GooglePlayGames\Native\NativeEventClient.cs" />
+    <Compile Include="GooglePlayGames\Native\NativeNearbyConnectionClientFactory.cs" />
+    <Compile Include="GooglePlayGames\Native\NativeNearbyConnectionsClient.cs" />
+    <Compile Include="GooglePlayGames\Native\NativeRealtimeMultiplayerClient.cs" />
+    <Compile Include="GooglePlayGames\Native\NativeSavedGameClient.cs" />
+    <Compile Include="GooglePlayGames\Native\NativeTurnBasedMultiplayerClient.cs" />
+    <Compile Include="GooglePlayGames\Native\NativeVideoClient.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\AchievementManager.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\AndroidPlatformConfiguration.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\BaseReferenceHolder.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\Callbacks.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\CaptureOverlayStateListenerHelper.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\EventManager.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\FetchResponse.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\FetchScorePageResponse.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\FetchScoreSummaryResponse.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\GameServices.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\GameServicesBuilder.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\GetCaptureCapabilitiesResponse.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\GetCaptureStateResponse.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\IsCaptureAvailableResponse.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\LeaderboardManager.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\MultiplayerInvitation.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\MultiplayerParticipant.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeAchievement.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeAppIdentifier.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeConnectionRequest.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeConnectionResponse.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeEndpointDetails.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeEndpointDiscoveryListenerHelper.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeEvent.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeLeaderboard.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeMessageListenerHelper.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativePlayer.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativePlayerStats.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeRealTimeRoom.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeScore.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeScoreEntry.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeScorePage.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeScorePageToken.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeScoreSummary.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeSnapshotMetadata.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeSnapshotMetadataChange.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeStartAdvertisingResult.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeTurnBasedMatch.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeVideoCapabilities.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NativeVideoCaptureState.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NearbyConnectionsManager.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\NearbyConnectionsManagerBuilder.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\ParticipantResults.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\PInvokeUtilities.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\PlatformConfiguration.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\PlayerManager.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\PlayerSelectUIResponse.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\RealTimeEventListenerHelper.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\RealtimeManager.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\RealtimeRoomConfig.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\RealtimeRoomConfigBuilder.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\SnapshotManager.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\StatsManager.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\TurnBasedManager.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\TurnBasedMatchConfig.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\TurnBasedMatchConfigBuilder.cs" />
+    <Compile Include="GooglePlayGames\Native\PInvoke\VideoManager.cs" />
+    <Compile Include="GooglePlayGames\Native\UnsupportedSavedGamesClient.cs" />
+    <Compile Include="GooglePlayGames\NearbyConnectionClientFactory.cs" />
+    <Compile Include="GooglePlayGames\OurUtils\Logger.cs" />
+    <Compile Include="GooglePlayGames\OurUtils\Misc.cs" />
+    <Compile Include="GooglePlayGames\OurUtils\PlatformUtils.cs" />
+    <Compile Include="GooglePlayGames\OurUtils\PlayGamesHelperObject.cs" />
+    <Compile Include="GooglePlayGames\PlayGamesAchievement.cs" />
+    <Compile Include="GooglePlayGames\PlayGamesClientFactory.cs" />
+    <Compile Include="GooglePlayGames\PlayGamesLeaderboard.cs" />
+    <Compile Include="GooglePlayGames\PlayGamesLocalUser.cs" />
+    <Compile Include="GooglePlayGames\PlayGamesPlatform.cs" />
+    <Compile Include="GooglePlayGames\PlayGamesScore.cs" />
+    <Compile Include="GooglePlayGames\PlayGamesUserProfile.cs" />
+    <Compile Include="GooglePlayGames\PluginVersion.cs" />
+    <Compile Include="GooglePlayGames\ReportProgress.cs" />
+    <Compile Include="GooglePlayGames\TokenClient.cs" />
+    <Compile Include="Google\Developers\JavaInterfaceProxy.cs" />
+    <Compile Include="Google\Developers\JavaObjWrapper.cs" />
+    <Compile Include="GUIAspectRatioScale.cs" />
+    <Compile Include="HelpURL.cs" />
+    <Compile Include="HighlightOwnedGameObj.cs" />
+    <Compile Include="Images.cs" />
+    <Compile Include="InAppManager.cs" />
+    <Compile Include="InAppManagerIOS.cs" />
+    <Compile Include="InputToEvent.cs" />
+    <Compile Include="InRoomChat.cs" />
+    <Compile Include="InRoomRoundTimer.cs" />
+    <Compile Include="IPunCallbacks.cs" />
+    <Compile Include="IPunObservable.cs" />
+    <Compile Include="IsoInt.cs" />
+    <Compile Include="JackController.cs" />
+    <Compile Include="JackHiScores.cs" />
+    <Compile Include="JackManager.cs" />
+    <Compile Include="JackPlatform.cs" />
+    <Compile Include="JackPlatformMover.cs" />
+    <Compile Include="JackPlatformSpawner.cs" />
+    <Compile Include="JackPlayer.cs" />
+    <Compile Include="JackScore.cs" />
+    <Compile Include="JackScoreObj.cs" />
+    <Compile Include="JoinType.cs" />
+    <Compile Include="KeyboardController.cs" />
+    <Compile Include="KeyboardKaverit.cs" />
+    <Compile Include="KuulaPong.cs" />
+    <Compile Include="LobbyType.cs" />
+    <Compile Include="ManualPhotonViewAllocator.cs" />
+    <Compile Include="MatchmakingMode.cs" />
+    <Compile Include="MesgVastaanottaja.cs" />
+    <Compile Include="MessageData.cs" />
+    <Compile Include="Moments\Encoder\GifEncoder.cs" />
+    <Compile Include="Moments\Encoder\GifFrame.cs" />
+    <Compile Include="Moments\Encoder\LzwEncoder.cs" />
+    <Compile Include="Moments\Encoder\NeuQuant.cs" />
+    <Compile Include="Moments\MinAttribute.cs" />
+    <Compile Include="Moments\ReflectionUtils.cs" />
+    <Compile Include="Moments\Worker.cs" />
+    <Compile Include="MoveByKeys.cs" />
+    <Compile Include="MoveControl.cs" />
+    <Compile Include="MultiKeyDictionary.cs" />
+    <Compile Include="NetworkingPeer.cs" />
+    <Compile Include="NetworkKuulaMoverP.cs" />
+    <Compile Include="NetworkManagerP.cs" />
+    <Compile Include="NetworkMoverP.cs" />
+    <Compile Include="OnAwakeUsePhotonView.cs" />
+    <Compile Include="OnClickDestroy.cs" />
+    <Compile Include="OnClickInstantiate.cs" />
+    <Compile Include="OnClickLoadSomething.cs" />
+    <Compile Include="OnJoinedInstantiate.cs" />
+    <Compile Include="OnnenPyora.cs" />
+    <Compile Include="OnSerializeRigidBody.cs" />
+    <Compile Include="OnSerializeTransform.cs" />
+    <Compile Include="OnStartDelete.cs" />
+    <Compile Include="OwnershipOption.cs" />
+    <Compile Include="PaintTest.cs" />
+    <Compile Include="PeerState.cs" />
+    <Compile Include="PhotonAnimatorView.cs" />
+    <Compile Include="PhotonHandler.cs" />
+    <Compile Include="PhotonLagSimulationGui.cs" />
+    <Compile Include="PhotonLogLevel.cs" />
+    <Compile Include="PhotonMessageInfo.cs" />
+    <Compile Include="PhotonNetwork.cs" />
+    <Compile Include="PhotonNetworkingMessage.cs" />
+    <Compile Include="PhotonPingManager.cs" />
+    <Compile Include="PhotonPlayer.cs" />
+    <Compile Include="PhotonRigidbody2DView.cs" />
+    <Compile Include="PhotonRigidbodyView.cs" />
+    <Compile Include="PhotonStatsGui.cs" />
+    <Compile Include="PhotonStream.cs" />
+    <Compile Include="PhotonStreamQueue.cs" />
+    <Compile Include="PhotonTargets.cs" />
+    <Compile Include="PhotonTransformView.cs" />
+    <Compile Include="PhotonTransformViewPositionControl.cs" />
+    <Compile Include="PhotonTransformViewPositionModel.cs" />
+    <Compile Include="PhotonTransformViewRotationControl.cs" />
+    <Compile Include="PhotonTransformViewRotationModel.cs" />
+    <Compile Include="PhotonTransformViewScaleControl.cs" />
+    <Compile Include="PhotonTransformViewScaleModel.cs" />
+    <Compile Include="PhotonView.cs" />
+    <Compile Include="Photon\MonoBehaviour.cs" />
+    <Compile Include="Photon\PunBehaviour.cs" />
+    <Compile Include="PickupItem.cs" />
+    <Compile Include="PickupItemSimple.cs" />
+    <Compile Include="PickupItemSyncer.cs" />
+    <Compile Include="PlatformManager.cs" />
+    <Compile Include="PlayerControl.cs" />
+    <Compile Include="PointedAtGameObjectInfo.cs" />
+    <Compile Include="PongMouseC.cs" />
+    <Compile Include="PPrefs.cs" />
+    <Compile Include="PPrefsUniversal.cs" />
+    <Compile Include="PrivaViestit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PunEvent.cs" />
+    <Compile Include="PunPlayerScores.cs" />
+    <Compile Include="PunRPC.cs" />
+    <Compile Include="PunTeams.cs" />
+    <Compile Include="QuitOnEscapeOrBack.cs" />
+    <Compile Include="RaiseEventOptions.cs" />
+    <Compile Include="Region.cs" />
+    <Compile Include="Reporter.cs" />
+    <Compile Include="ReporterGUI.cs" />
+    <Compile Include="ReporterMessageReceiver.cs" />
+    <Compile Include="Room.cs" />
+    <Compile Include="RoomInfo.cs" />
+    <Compile Include="RoomOptions.cs" />
+    <Compile Include="Rotate.cs" />
+    <Compile Include="SampleScript.cs" />
+    <Compile Include="SanaFilter.cs" />
+    <Compile Include="SavedGameMetaData.cs" />
+    <Compile Include="SaveSystemTests.cs" />
+    <Compile Include="ScaleCamera.cs" />
+    <Compile Include="ScoreExtensions.cs" />
+    <Compile Include="SeinaPong.cs" />
+    <Compile Include="ServerConnection.cs" />
+    <Compile Include="ServerSettings.cs" />
+    <Compile Include="ServerTime.cs" />
+    <Compile Include="ShareBeggar.cs" />
+    <Compile Include="ShowInfoOfPlayer.cs" />
+    <Compile Include="ShowStatusWhenConnecting.cs" />
+    <Compile Include="SimpleFirebaseUnity\DataSnapshot.cs" />
+    <Compile Include="SimpleFirebaseUnity\Firebase.cs" />
+    <Compile Include="SimpleFirebaseUnity\FirebaseError.cs" />
+    <Compile Include="SimpleFirebaseUnity\FirebaseManager.cs" />
+    <Compile Include="SimpleFirebaseUnity\FirebaseObserver.cs" />
+    <Compile Include="SimpleFirebaseUnity\FirebaseParam.cs" />
+    <Compile Include="SimpleFirebaseUnity\FirebaseQueue.cs" />
+    <Compile Include="SimpleFirebaseUnity\FirebaseRoot.cs" />
+    <Compile Include="SimpleFirebaseUnity\MiniJSON\Json.cs" />
+    <Compile Include="SingleMessage.cs" />
+    <Compile Include="SmoothSyncMovement.cs" />
+    <Compile Include="StackerManager.cs" />
+    <Compile Include="StackerVilkuta.cs" />
+    <Compile Include="SupportLogger.cs" />
+    <Compile Include="SupportLogging.cs" />
+    <Compile Include="SuuretLuvut.cs" />
+    <Compile Include="TeamExtensions.cs" />
+    <Compile Include="test22.cs" />
+    <Compile Include="TestReporter.cs" />
+    <Compile Include="testWordFilter.cs" />
+    <Compile Include="TiedostoMuunnos.cs" />
+    <Compile Include="TnTest.cs" />
+    <Compile Include="TyoTesti.cs" />
+    <Compile Include="TypedLobby.cs" />
+    <Compile Include="TypedLobbyInfo.cs" />
+    <Compile Include="UAMainokset.cs" />
+    <Compile Include="ViewSynchronization.cs" />
+    <Compile Include="WebRpcResponse.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
